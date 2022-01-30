@@ -27,4 +27,12 @@ export default class StackArray {
   clear() {
     this.items = [];
   }
+
+  toArray() {
+    return this.items;
+  }
+
+  toString() {
+    return this.items.toString();
+  }
 }
