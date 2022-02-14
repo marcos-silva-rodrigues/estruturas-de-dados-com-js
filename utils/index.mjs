@@ -3,11 +3,19 @@ export const Compare = {
   BIGGER_THAN: 1,
 }
 
+export const BalanceFactor = {
+  UNBALANCE_RIGHT: 1,
+  SLIGHTY_UNBALANCE_RIGHT: 2,
+  BALANCED: 3,
+  SLIGHTY_UNBALANCE_LEFT: 4,
+  UNBALANCE_LEFT: 5,
+}
+
 export function defaultEquals (a, b) {
   return a === b;
 }
 
-export function defaultCompare() {
+export function defaultCompare(a, b) {
   if (a === b) {
     return 0;
   }
