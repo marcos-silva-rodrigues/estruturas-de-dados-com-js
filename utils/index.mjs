@@ -3,6 +3,11 @@ export const Compare = {
   BIGGER_THAN: 1,
 }
 
+export const Colors = {
+  RED = 0,
+  BLACK = 1
+}
+
 export const BalanceFactor = {
   UNBALANCE_RIGHT: 1,
   SLIGHTY_UNBALANCE_RIGHT: 2,
