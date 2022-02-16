@@ -4,8 +4,8 @@ export const Compare = {
 }
 
 export const Colors = {
-  RED = 0,
-  BLACK = 1
+  RED: 0,
+  BLACK: 1
 }
 
 export const BalanceFactor = {
@@ -38,4 +38,14 @@ export function defaultToString(item) {
   }
 
   return item.toString();
+}
+
+export function swap(array, a, b) {
+  const temp = array[a];
+  array[a] = array[b];
+  array[b] = temp;
+}
+
+export function reverseCompare(compareFn) {
+  return (a, b) => compareFn(b, a);
 }
