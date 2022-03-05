@@ -18,5 +18,5 @@ console.log(dictionary.keyValues());
 console.log(dictionary.toString());
 
 dictionary.forEach((k, v) => {
-  console.log('ForEach: ', `key: ${k}, value: ${v}`);p
+  console.log('ForEach: ', `key: ${k}, value: ${v}`);
 })

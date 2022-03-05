@@ -1,5 +1,5 @@
-import ValuePair from '../models/value-pair.mjs';
-import { defaultToString } from '../utils/index.mjs';
+import ValuePair from '../../models/value-pair.mjs';
+import { defaultToString } from '../../utils/index.mjs';
 
 export default class Dictionary {
   constructor(toStrFn = defaultToString) {
