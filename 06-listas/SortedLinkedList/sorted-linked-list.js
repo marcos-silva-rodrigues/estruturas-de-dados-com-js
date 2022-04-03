@@ -1,5 +1,5 @@
-import { Compare, defaultCompare, defaultEquals } from "../../utils/index.mjs";
-import LinkedList from "../LinkedList/linked-list.mjs";
+import { Compare, defaultCompare, defaultEquals } from "../../utils/index.js";
+import LinkedList from "../LinkedList/linked-list.js";
 
 export default class SortedLinkedList extends LinkedList {
   constructor(equalsFn = defaultEquals, compareFn = defaultCompare) {

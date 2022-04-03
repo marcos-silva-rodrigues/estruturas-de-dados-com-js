@@ -1,5 +1,5 @@
-import { defaultToString } from "../../utils/index.mjs";
-import LinkedList from '../../06-listas/LinkedList/linked-list.mjs'
+import { defaultToString } from "../../utils/index.js";
+import LinkedList from '../../06-listas/LinkedList/linked-list.js'
 
 export default class HashTableSeparateChaining {
   constructor(toStrFn = defaultToString) {

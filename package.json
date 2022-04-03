@@ -1,0 +1,21 @@
+{
+  "name": "estruturas-de-dados-com",
+  "version": "1.0.0",
+  "description": "Repositório para armanezar os estudos do livro **Estruturas de dados e algoritmos em JavaScript 2ª Edição** escrito pela Loiane Groner",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcos-silva-rodrigues/estruturas-de-dados-com-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcos-silva-rodrigues/estruturas-de-dados-com-js/issues"
+  },
+  "homepage": "https://github.com/marcos-silva-rodrigues/estruturas-de-dados-com-js#readme"
+}

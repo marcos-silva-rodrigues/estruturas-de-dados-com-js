@@ -1,6 +1,6 @@
-import { Colors, Compare, defaultCompare } from "../../utils/index.mjs";
-import BinarySearchTree from "../BST/binary-search-tree.mjs";
-import RedBlackNode from '../../models/red-black-node.mjs';
+import { Colors, Compare, defaultCompare } from "../../utils/index.js";
+import BinarySearchTree from "../BST/binary-search-tree.js";
+import RedBlackNode from '../../models/red-black-node.js';
 
 class RedBlackTree extends BinarySearchTree {
   constructor(compareFn = defaultCompare) {

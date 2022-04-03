@@ -1,5 +1,5 @@
-import StackArray from "./stack-array.mjs";
-import Stack from "./stack.mjs";
+import StackArray from "./stack-array.js";
+import Stack from "./stack.js";
 
 const stack = new StackArray();
 console.log(stack.isEmpty());

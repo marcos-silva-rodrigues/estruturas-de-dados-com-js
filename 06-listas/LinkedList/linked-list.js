@@ -1,5 +1,5 @@
-import { Node } from "../../models/linked-list-models.mjs";
-import { defaultEquals } from "../../utils/index.mjs";
+import { Node } from "../../models/linked-list-models.js";
+import { defaultEquals } from "../../utils/index.js";
 
 export default class LinkedList {
   constructor(equalsFn = defaultEquals) {

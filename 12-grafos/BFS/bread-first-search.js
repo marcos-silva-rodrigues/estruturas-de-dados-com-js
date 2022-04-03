@@ -1,4 +1,4 @@
-import Queue from "../../05-filas/Queue/queue.mjs";
+import Queue from "../../05-filas/Queue/queue.js";
 
 const Colors = {
   WHITE: 0,

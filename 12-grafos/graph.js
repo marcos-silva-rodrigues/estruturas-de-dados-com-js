@@ -1,4 +1,4 @@
-import Dictionary from '../08-dicionarios/Dictionary/dictionary.mjs';
+import Dictionary from '../08-dicionarios/Dictionary/dictionary.js';
 
 export default class Graph {
   constructor(isDirected = false) {

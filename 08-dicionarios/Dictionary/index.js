@@ -1,4 +1,4 @@
-import Dictionary from "./dictionary.mjs";
+import Dictionary from "./dictionary.js";
 
 const dictionary = new Dictionary()
 

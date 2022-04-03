@@ -1,4 +1,4 @@
-import DoublyLinkedList from "../DoublyLinkedList/doubly-linked-list.mjs";
+import DoublyLinkedList from "../DoublyLinkedList/doubly-linked-list.js";
 
 export default class StackLinkedList {
   constructor() {

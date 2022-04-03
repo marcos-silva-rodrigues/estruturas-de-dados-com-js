@@ -1,4 +1,4 @@
-import LinkedList from "./linked-list.mjs";
+import LinkedList from "./linked-list.js";
 
 const list = new LinkedList();
 list.push(15);

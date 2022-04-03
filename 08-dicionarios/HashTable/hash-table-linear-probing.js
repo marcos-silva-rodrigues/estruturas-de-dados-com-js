@@ -1,5 +1,5 @@
-import { defaultToString } from "../../utils/index.mjs";
-import ValuePair from "../../models/value-pair.mjs";
+import { defaultToString } from "../../utils/index.js";
+import ValuePair from "../../models/value-pair.js";
 
 export default class HashTableLinearProbing {
   constructor(toStrFn = defaultToString) {

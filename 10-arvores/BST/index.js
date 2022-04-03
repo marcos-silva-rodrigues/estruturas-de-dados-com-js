@@ -1,4 +1,4 @@
-import BinarySearchTree from "./binary-search-tree.mjs";
+import BinarySearchTree from "./binary-search-tree.js";
 
 const tree = new BinarySearchTree();
 

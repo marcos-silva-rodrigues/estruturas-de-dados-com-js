@@ -1,4 +1,4 @@
-import { defaultCompare, swap } from "../utils/index.mjs";
+import { defaultCompare, swap } from "../utils/index.js";
 
 function heapify(array, index, heapSize, compareFn) {
   let largest = index;

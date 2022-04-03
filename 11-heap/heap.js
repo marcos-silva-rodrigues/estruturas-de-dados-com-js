@@ -1,4 +1,4 @@
-import { Compare, defaultCompare, reverseCompare, swap } from "../utils/index.mjs";
+import { Compare, defaultCompare, reverseCompare, swap } from "../utils/index.js";
 
 export class MinHeap {
   constructor(compareFn = defaultCompare) {

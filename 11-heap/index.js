@@ -1,4 +1,4 @@
-import { MaxHeap, MinHeap } from "./heap.mjs";
+import { MaxHeap, MinHeap } from "./heap.js";
 
 const heap = new MinHeap();
 

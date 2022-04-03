@@ -1,4 +1,4 @@
-import HashTable from "./hash-table.mjs";
+import HashTable from "./hash-table.js";
 
 const hash = new HashTable();
 

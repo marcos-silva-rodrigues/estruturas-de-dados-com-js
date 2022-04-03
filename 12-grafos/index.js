@@ -1,6 +1,6 @@
-import { breadthFirstSearch, BFS } from "./BFS/bread-first-search.mjs";
-import Stack from '../04-pilhas/stack.mjs'
-import Graph from "./graph.mjs";
+import { breadthFirstSearch, BFS } from "./BFS/bread-first-search.js";
+import Stack from '../04-pilhas/stack.js'
+import Graph from "./graph.js";
 
 const graph = new Graph();
 
