@@ -1,11 +1,5 @@
 import Queue from "../../05-filas/Queue/queue.js";
-import { initializeColor } from "../../utils/index.js";
-
-const Colors = {
-  WHITE: 0,
-  GREY: 1,
-  BLACK: 2,
-}
+import { GraphColors, initializeColor } from "../../utils/index.js";
 
 export const breadthFirstSearch = (graph, startVertex, callback) => {
   const vertices = graph.getVertices();
@@ -18,16 +12,16 @@ export const breadthFirstSearch = (graph, startVertex, callback) => {
   while(!queue.isEmpty()) {
     const u = queue.dequeue();
     const neighbors = adjList.get(u);
-    color[u] = Colors.GREY;
+    color[u] = GraphColors.GREY;
 
     for (let i = 0; i < neighbors.length; i++) {
       const w = neighbors[i];
-      if (color[w] === Colors.WHITE) {
-        color[w] = Colors.GREY;
+      if (color[w] === GraphColors.WHITE) {
+        color[w] = GraphColors.GREY;
         queue.enqueue(w);
       }
     }
-    color[u] = Colors.BLACK;
+    color[u] = GraphColors.BLACK;
     if (callback) {
       callback(u);
     }
@@ -52,19 +46,19 @@ export const BFS = (graph, startVertex) => {
   while (!queue.isEmpty()) {
     const u = queue.dequeue();
     const neightbors = adjList.get(u);
-    color[u] = Colors.GREY;
+    color[u] = GraphColors.GREY;
 
     for (let i = 0; i < neightbors.length; i++) {
       const w = neightbors[i];
 
-      if (color[w] === Colors.WHITE) {
-        color[w] = Colors.GREY;
+      if (color[w] === GraphColors.WHITE) {
+        color[w] = GraphColors.GREY;
         distances[w] = distances[u] + 1;
         predecessors[w] = u;
         queue.enqueue(w);
       }
     }
-    color[u] = Colors.BLACK;
+    color[u] = GraphColors.BLACK;
   }
 
   return {

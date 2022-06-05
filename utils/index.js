@@ -8,6 +8,12 @@ export const Colors = {
   BLACK: 1
 }
 
+export const GraphColors = {
+  WHITE: 0,
+  GREY: 1,
+  BLACK: 2,
+}
+
 export const BalanceFactor = {
   UNBALANCE_RIGHT: 1,
   SLIGHTY_UNBALANCE_RIGHT: 2,
