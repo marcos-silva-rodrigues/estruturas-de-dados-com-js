@@ -22,7 +22,7 @@ graph.addEdge('B', 'E');
 graph.addEdge('B', 'F');
 graph.addEdge('E', 'I');
 
-console.log(graph.toString());
+// console.log(graph.toString());
 
 const printVertex = (value) => console.log('Visited vertex: ' + value);
 
@@ -52,7 +52,7 @@ const printVertex = (value) => console.log('Visited vertex: ' + value);
  // DFS
 // depthFirstSearch(graph, printVertex);
 
-const graph2 = new Graph();
+const graph2 = new Graph(true);
 
 const myVertices2 = ['A','B','C','D','E','F'];
 
@@ -76,7 +76,7 @@ for (let count = 0; count < myVertices2.length; count++) {
   let max = 0;
   let maxName = 0;
 
-  for (let i = 0; i < myVertices2; i++) {
+  for (let i = 0; i < myVertices2.length; i++) {
     if(fTimes[myVertices2[i]] > max) {
       max = fTimes[myVertices2[i]];
       maxName = myVertices2[i]
