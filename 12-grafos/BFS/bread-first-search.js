@@ -1,19 +1,10 @@
 import Queue from "../../05-filas/Queue/queue.js";
+import { initializeColor } from "../../utils/index.js";
 
 const Colors = {
   WHITE: 0,
   GREY: 1,
   BLACK: 2,
-}
-
-
-const initializeColor = vertices => {
-  const color = {};
-  for(let i = 0; i < vertices.length; i++) {
-    color[vertices[i]] = Colors.WHITE;
-  }
-
-  return color;
 }
 
 export const breadthFirstSearch = (graph, startVertex, callback) => {
