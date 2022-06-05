@@ -1,6 +1,7 @@
 import { breadthFirstSearch, BFS } from "./BFS/bread-first-search.js";
 import Stack from '../04-pilhas/stack.js'
 import Graph from "./graph.js";
+import { depthFirstSearch, DFS } from "./DFS/depth-first-search.js";
 
 const graph = new Graph();
 
@@ -24,23 +25,66 @@ graph.addEdge('E', 'I');
 console.log(graph.toString());
 
 const printVertex = (value) => console.log('Visited vertex: ' + value);
-breadthFirstSearch(graph, myVertices[0], printVertex);
 
-const shortestPathA = BFS(graph, myVertices[0]);
-console.log(shortestPathA);
+// BFS
+// breadthFirstSearch(graph, myVertices[0], printVertex);
 
-const fromVertex = myVertices[0];
+// const shortestPathA = BFS(graph, myVertices[0]);
+// console.log(shortestPathA);
 
-for (let i = 1; i < myVertices.length; i++) {
-  const toVertex = myVertices[i];
-  const path = new Stack();
-  for (let v = toVertex; v !== fromVertex; v = shortestPathA.predecessors[v]) {
-    path.push(v);
-  }
-  path.push(fromVertex);
-  let s = path.pop();
-  while (!path.isEmpty()) {
-    s += ' - ' + path.pop();
-  }
-  console.log(s);
+// const fromVertex = myVertices[0];
+
+// for (let i = 1; i < myVertices.length; i++) {
+//   const toVertex = myVertices[i];
+//   const path = new Stack();
+//   for (let v = toVertex; v !== fromVertex; v = shortestPathA.predecessors[v]) {
+//     path.push(v);
+//   }
+//   path.push(fromVertex);
+//   let s = path.pop();
+//   while (!path.isEmpty()) {
+//     s += ' - ' + path.pop();
+//   }
+//   console.log(s);
+// }
+
+
+ // DFS
+// depthFirstSearch(graph, printVertex);
+
+const graph2 = new Graph();
+
+const myVertices2 = ['A','B','C','D','E','F'];
+
+for (let i = 0; i < myVertices2.length; i++) {
+  graph2.addVertex(myVertices2[i]);
 }
+
+graph2.addEdge('A', 'C');
+graph2.addEdge('A', 'D');
+graph2.addEdge('B', 'D');
+graph2.addEdge('B', 'E');
+graph2.addEdge('C', 'F');
+graph2.addEdge('F', 'E');
+
+const result = DFS(graph2);
+
+const fTimes = result.finished;
+let s = '';
+
+for (let count = 0; count < myVertices2.length; count++) {
+  let max = 0;
+  let maxName = 0;
+
+  for (let i = 0; i < myVertices2; i++) {
+    if(fTimes[myVertices2[i]] > max) {
+      max = fTimes[myVertices2[i]];
+      maxName = myVertices2[i]
+    }
+  }
+
+  s+= ' - ' + maxName;
+  delete fTimes[maxName];
+}
+
+console.log(s);
