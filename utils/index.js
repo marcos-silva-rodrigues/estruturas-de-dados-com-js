@@ -59,7 +59,7 @@ export function reverseCompare(compareFn) {
 export const initializeColor = vertices => {
   const color = {};
   for(let i = 0; i < vertices.length; i++) {
-    color[vertices[i]] = Colors.WHITE;
+    color[vertices[i]] = GraphColors.WHITE;
   }
 
   return color;

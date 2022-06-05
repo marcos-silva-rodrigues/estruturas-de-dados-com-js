@@ -1,4 +1,4 @@
-import { GraphColors, initializeColor } from "../../utils";
+import { GraphColors, initializeColor } from "../../utils/index.js";
 
 export const depthFirstSearch = (graph, callback) => {
   const vertices = graph.getVertices();
@@ -15,7 +15,7 @@ export const depthFirstSearch = (graph, callback) => {
 const depthFirstSearchVisit = (u, color, adjList, callback) => {
   color[u] = GraphColors.GREY;
   if (callback) {
-    callback();
+    callback(u);
   }
 
   const neighbors = adjList.get(u);
