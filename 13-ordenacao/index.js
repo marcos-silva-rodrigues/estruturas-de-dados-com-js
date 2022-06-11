@@ -1,5 +1,6 @@
 import { bubbleSort, modifiedBubbleSort } from "./bubbleSort.js";
 import { insertionSort } from "./insertionSort.js";
+import { mergeSort } from "./mergeSort.js";
 import { selectionSort } from "./selectionSort.js";
 
 function createNonSortedArray(size) {
@@ -11,8 +12,8 @@ function createNonSortedArray(size) {
   return array;
 }
 
-let array = createNonSortedArray(5);
-console.log(array);
+// let array = createNonSortedArray(5);
+// console.log(array);
 
 // Bubble Sort
 // array = bubbleSort(array);
@@ -27,6 +28,9 @@ console.log(array);
 // console.log(array);
 
 // Insertion Sort
-array = [3, 5, 1, 4, 2]
-array = insertionSort(array);
+// array = [3, 5, 1, 4, 2]
+// array = insertionSort(array);
+
+let array = createNonSortedArray(8);
+array = mergeSort(array);
 console.log(array);
