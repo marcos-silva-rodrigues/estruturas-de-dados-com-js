@@ -1,4 +1,5 @@
 import { bubbleSort, modifiedBubbleSort } from "./bubbleSort.js";
+import { countingSort } from "./countingSort.js";
 import { insertionSort } from "./insertionSort.js";
 import { mergeSort } from "./mergeSort.js";
 import { quickSort } from "./quickSort.js";
@@ -38,6 +39,11 @@ function createNonSortedArray(size) {
 // console.log(array);
 
 // Quick Sort
-let array = [3, 5, 1, 6, 4, 7, 2];
-array = quickSort(array);
+// let array = [3, 5, 1, 6, 4, 7, 2];
+// array = quickSort(array);
+// console.log(array);
+
+// Counting Sort
+let array = [5, 4, 3, 2, 3, 1];
+array = countingSort(array);
 console.log(array);
