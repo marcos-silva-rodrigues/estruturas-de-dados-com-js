@@ -1,6 +1,4 @@
-import { defaultEquals } from '../utils/index.js';
-
-const DOES_NOT_EXISTS = -1;
+import { defaultEquals, DOES_NOT_EXISTS } from '../utils/index.js';
 
 export function sequentialSearch(array, value, equalsFn = defaultEquals) {
   for (let i = 0; i < array.length; i++) {

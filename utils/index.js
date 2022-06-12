@@ -1,6 +1,7 @@
 export const Compare = {
   LESS_THAN: -1,
   BIGGER_THAN: 1,
+  EQUALS: 0,
 }
 
 export const Colors = {
@@ -21,6 +22,8 @@ export const BalanceFactor = {
   SLIGHTY_UNBALANCE_LEFT: 4,
   UNBALANCE_LEFT: 5,
 }
+
+export const DOES_NOT_EXISTS = -1;
 
 export function defaultEquals (a, b) {
   return a === b;
@@ -87,4 +90,14 @@ export function findMinValue(array) {
   }
 
   return min;
+}
+
+export function lessOrEquals(a, b, compareFn) {
+  const comp = compareFn(a, b);
+  return comp === Compare.LESS_THAN || comp === Compare.EQUALS;
+}
+
+export function biggerOrEquals(a, b, compareFn) {
+  const comp = compareFn(a, b);
+  return comp === Compare.BIGGER_THAN || comp === Compare.EQUALS;
 }
