@@ -64,3 +64,27 @@ export const initializeColor = vertices => {
 
   return color;
 }
+
+export function findMaxValue(array) {
+  let max = 0;
+
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] > max) {
+      max = array[i];
+    }
+  }
+
+  return max;
+}
+
+export function findMinValue(array) {
+  let min = 0;
+
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] < min) {
+      min = array[i];
+    }
+  }
+
+  return min;
+}
