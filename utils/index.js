@@ -37,6 +37,10 @@ export function defaultCompare(a, b) {
   return a < b ? Compare.LESS_THAN : Compare.BIGGER_THAN;
 }
 
+export function defaultDiff(a, b) {
+  return Number(a) - Number(b);
+}
+
 export function defaultToString(item) {
   if (item === null) {
     return 'NULL';
